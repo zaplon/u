@@ -1,7 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,125 +22,130 @@
 
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Quattrocento|Raleway" rel="stylesheet">
-	<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top hidden-sm-up">
-      <a class="navbar-brand" href="#">Project name</a>
-      <ul class="nav nav-pills">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+<nav class="navbar navbar-inverse navbar-fixed-top hidden-md-up topbar">
+    <a class="navbar-brand" href="#">Wyceny</a>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a href="#introduction" class="nav-link active">O mnie</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#competence">Oferta</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact-form">Kontakt</a>
         </li>
-      </ul>
-    </nav>
+    </ul>
+</nav>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-3 col-lg-2 hidden-md-down bg-faded sidebar p-3">
-                <div id="navbar" class="">
-                    <ul class="nav">
-                      <li class="nav-item">
-                        <a href="#contact-form" class="nav-link active" href="#">Wycena</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#competence">Kompetencje</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Cennik</a>
-                      </li>
-                    </ul>
-                    <div id="line"></div>
-                </div>
+<div class="container-fluid page-container">
+    <div class="row">
+        <div class="col-md-3 col-lg-2 hidden-sm-down bg-faded sidebar">
+            <div class="promo  p-2">
+                <h1>Urszula Martin</h1>
+
+                <div><span><i class="fa fa-phone" aria-hidden="true"></i>
+                    <a href="tel:+48503513530">+48 502 513 530</a></span></div>
+                <div><span><i class="fa fa-envelope" aria-hidden="true"></i>
+                    <a href="mailto:urszula.martin@gmail.com">urszula.martin@gmail.com</a></span></div>
+                </p>
             </div>
-            <div class="col-md-9 col-lg-10 offset-md-3 offset-lg-2">
-                <section id="contact-form">
-                    <div class="row contact-form-container">
-                    <div class="col-md-8 p-3">
-                      <form>
-                        <div class="form-group row">
-                          <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                          <div class="col-sm-10">
-                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                          </div>
-                        </div>
-                        <div class="form-group row">
-                          <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-                          <div class="col-sm-10">
-                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                          </div>
-                        </div>
-                        <fieldset class="form-group row">
-                          <legend class="col-form-legend col-sm-2">Radios</legend>
-                          <div class="col-sm-10">
-                            <div class="form-check">
-                              <label class="form-check-label">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                                Option one is this and that&mdash;be sure to include why it's great
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <label class="form-check-label">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                                Option two can be something else and selecting it will deselect option one
-                              </label>
-                            </div>
-                            <div class="form-check disabled">
-                              <label class="form-check-label">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
-                                Option three is disabled
-                              </label>
-                            </div>
-                          </div>
-                        </fieldset>
-                        <div class="form-group row">
-                          <label class="col-sm-2">Checkbox</label>
-                          <div class="col-sm-10">
-                            <div class="form-check">
-                              <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox"> Check me out
-                              </label>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group row">
-                          <div class="offset-sm-2 col-sm-10">
-                            <button type="submit" class="btn btn-primary">Prześlij</button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                    </div>
-                </section>
-                <section id="competence" class="p-3">
-                    <h1>Kompetencje</h1>
-                </section>
+            <div id="navbar" class="p-2">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#introduction" class="nav-link active">O mnie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#competence">Oferta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-form">Kontakt</a>
+                    </li>
+                </ul>
             </div>
         </div>
+        <div class="col-md-9 col-lg-10 offset-md-3 offset-lg-2 p-3">
+            <section id="introduction">
+                <h2>O mnie</h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla, elit non auctor dapibus,
+                    lectus sapien aliquam enim, eget accumsan turpis erat vel felis. Praesent commodo vitae urna at
+                    dictum. Pellentesque faucibus vehicula porta. Ut facilisis porta dui id semper. Vestibulum rhoncus
+                    lorem vel volutpat condimentum. Morbi vehicula viverra ante, faucibus suscipit justo suscipit id.
+                    Vivamus tincidunt ante erat, ac efficitur diam varius quis. Nam posuere lorem nisi, ut convallis
+                    nisi fermentum eget. Nam ligula ex, tincidunt vel sollicitudin non, dapibus at diam.
+                </p>
+            </section>
+            <section id="competence">
+                <h2>Oferta</h2>
+            </section>
+            <section id="contact-form">
+                <h2>Kontakt</h2>
+                <form>
+                    <div class="form-group row">
+                        <label for="inputName" class="col-sm-2 col-form-label">Imię*</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputName" placeholder="Imię">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputEmail" class="col-sm-2 col-form-label">Email*</label>
+
+                        <div class="col-sm-10">
+                            <input type="email" required class="form-control" required id="inputEmail" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputMessage" required class="col-sm-2 col-form-label">Wiadomość*</label>
+
+                        <div class="col-sm-10">
+                            <textarea rows="10" required class="form-control" id="inputMessage" placeholder="Wiadomość"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2">Wyślij mi kopię</label>
+
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-sm-2 col-sm-10">
+                            <button type="submit" class="btn btn-primary btn-lg">Prześlij</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
 
 
-    </div><!-- /.container -->
+</div><!-- /.container -->
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="bower_components/tether/dist/js/tether.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- JS -->
-    <script src="assets/js/u.js"></script>
-  </body>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="bower_components/tether/dist/js/tether.min.js"></script>
+<script src="bower_components/bootstrap/js/dist/util.js"></script>
+<script src="bower_components/bootstrap/js/dist/scrollspy.js"></script>
+<!-- JS -->
+<script src="assets/js/u.js"></script>
+</body>
 </html>

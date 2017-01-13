@@ -668,7 +668,7 @@ mark,
   padding: 0.25rem;
   background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 0.5rem;
+  border-radius: 0rem;
   -webkit-transition: all .2s ease-in-out;
   -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
@@ -702,7 +702,7 @@ code {
   font-size: 90%;
   color: #bd4147;
   background-color: #f7f7f9;
-  border-radius: 0.5rem;
+  border-radius: 0rem;
 }
 
 kbd {
@@ -2168,7 +2168,7 @@ pre code {
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.5rem;
+  border-radius: 0rem;
 }
 
 .form-control::-ms-expand {
@@ -2513,7 +2513,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   border: 1px solid transparent;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  border-radius: 0.5rem;
+  border-radius: 0rem;
 }
 
 .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
@@ -3214,7 +3214,7 @@ tbody.collapse.in {
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.5rem;
+  border-radius: 0rem;
 }
 
 .dropdown-divider {
@@ -3551,7 +3551,7 @@ tbody.collapse.in {
   text-align: center;
   background-color: #eceeef;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.5rem;
+  border-radius: 0rem;
 }
 
 .input-group-addon.form-control-sm,
@@ -3703,7 +3703,7 @@ tbody.collapse.in {
 }
 
 .custom-checkbox .custom-control-indicator {
-  border-radius: 0.5rem;
+  border-radius: 0rem;
 }
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-indicator {
@@ -3745,7 +3745,7 @@ tbody.collapse.in {
   -webkit-background-size: 8px 10px;
           background-size: 8px 10px;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.5rem;
+  border-radius: 0rem;
   -moz-appearance: none;
   -webkit-appearance: none;
 }
@@ -3808,7 +3808,7 @@ tbody.collapse.in {
           user-select: none;
   background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 0.5rem;
+  border-radius: 0rem;
 }
 
 .custom-file-control:lang(en)::after {
@@ -3828,7 +3828,7 @@ tbody.collapse.in {
   color: #555;
   background-color: #eee;
   border: 1px solid #ddd;
-  border-radius: 0 0.5rem 0.5rem 0;
+  border-radius: 0 0rem 0rem 0;
 }
 
 .custom-file-control:lang(en)::before {
@@ -3891,8 +3891,8 @@ tbody.collapse.in {
   display: block;
   padding: 0.5em 1em;
   border: 1px solid transparent;
-  border-top-right-radius: 0.5rem;
-  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0rem;
+  border-top-left-radius: 0rem;
 }
 
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
@@ -3937,7 +3937,7 @@ tbody.collapse.in {
 .nav-pills .nav-link {
   display: block;
   padding: 0.5em 1em;
-  border-radius: 0.5rem;
+  border-radius: 0rem;
 }
 
 .nav-pills .nav-link.active, .nav-pills .nav-link.active:focus, .nav-pills .nav-link.active:hover,
@@ -3980,7 +3980,7 @@ tbody.collapse.in {
 
 @media (min-width: 576px) {
   .navbar {
-    border-radius: 0.5rem;
+    border-radius: 0rem;
   }
 }
 
@@ -4074,7 +4074,7 @@ tbody.collapse.in {
   -webkit-background-size: 24px 24px;
           background-size: 24px 24px;
   border: 1px solid transparent;
-  border-radius: 0.5rem;
+  border-radius: 0rem;
 }
 
 .navbar-toggler:focus, .navbar-toggler:hover {
@@ -4386,7 +4386,7 @@ tbody.collapse.in {
   display: block;
   margin-bottom: 0.75rem;
   background-color: #fff;
-  border-radius: 0.5rem;
+  border-radius: 0rem;
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
@@ -4422,13 +4422,13 @@ tbody.collapse.in {
 }
 
 .card > .list-group:first-child .list-group-item:first-child {
-  border-top-right-radius: 0.5rem;
-  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0rem;
+  border-top-left-radius: 0rem;
 }
 
 .card > .list-group:last-child .list-group-item:last-child {
-  border-bottom-right-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0rem;
+  border-bottom-left-radius: 0rem;
 }
 
 .card-header {
@@ -4445,7 +4445,7 @@ tbody.collapse.in {
 }
 
 .card-header:first-child {
-  border-radius: calc(0.5rem - 1px) calc(0.5rem - 1px) 0 0;
+  border-radius: calc(0rem - 1px) calc(0rem - 1px) 0 0;
 }
 
 .card-footer {
@@ -4461,7 +4461,7 @@ tbody.collapse.in {
 }
 
 .card-footer:last-child {
-  border-radius: 0 0 calc(0.5rem - 1px) calc(0.5rem - 1px);
+  border-radius: 0 0 calc(0rem - 1px) calc(0rem - 1px);
 }
 
 .card-header-tabs {
@@ -4586,7 +4586,7 @@ tbody.collapse.in {
 }
 
 .card-img {
-  border-radius: calc(0.5rem - 1px);
+  border-radius: calc(0rem - 1px);
 }
 
 .card-img-overlay {
@@ -4599,13 +4599,13 @@ tbody.collapse.in {
 }
 
 .card-img-top {
-  border-top-right-radius: calc(0.5rem - 1px);
-  border-top-left-radius: calc(0.5rem - 1px);
+  border-top-right-radius: calc(0rem - 1px);
+  border-top-left-radius: calc(0rem - 1px);
 }
 
 .card-img-bottom {
-  border-bottom-right-radius: calc(0.5rem - 1px);
-  border-bottom-left-radius: calc(0.5rem - 1px);
+  border-bottom-right-radius: calc(0rem - 1px);
+  border-bottom-left-radius: calc(0rem - 1px);
 }
 
 @media (min-width: 576px) {
@@ -4701,7 +4701,7 @@ tbody.collapse.in {
   margin-bottom: 1rem;
   list-style: none;
   background-color: #eceeef;
-  border-radius: 0.5rem;
+  border-radius: 0rem;
 }
 
 .breadcrumb::after {
@@ -4739,7 +4739,7 @@ tbody.collapse.in {
   padding-left: 0;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  border-radius: 0.5rem;
+  border-radius: 0rem;
 }
 
 .page-item {
@@ -4748,13 +4748,13 @@ tbody.collapse.in {
 
 .page-item:first-child .page-link {
   margin-left: 0;
-  border-bottom-left-radius: 0.5rem;
-  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0rem;
+  border-top-left-radius: 0rem;
 }
 
 .page-item:last-child .page-link {
-  border-bottom-right-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0rem;
+  border-top-right-radius: 0rem;
 }
 
 .page-item.active .page-link, .page-item.active .page-link:focus, .page-item.active .page-link:hover {
@@ -4830,7 +4830,7 @@ tbody.collapse.in {
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: 0.5rem;
+  border-radius: 0rem;
 }
 
 .tag:empty {
@@ -4929,7 +4929,7 @@ a.tag:focus, a.tag:hover {
   padding: 0.75rem 1.25rem;
   margin-bottom: 1rem;
   border: 1px solid transparent;
-  border-radius: 0.5rem;
+  border-radius: 0rem;
 }
 
 .alert-heading {
@@ -5047,7 +5047,7 @@ a.tag:focus, a.tag:hover {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  border-radius: 0.5rem;
+  border-radius: 0rem;
 }
 
 .progress[value]::-ms-fill {
@@ -5057,53 +5057,53 @@ a.tag:focus, a.tag:hover {
 
 .progress[value]::-moz-progress-bar {
   background-color: #0074d9;
-  border-bottom-left-radius: 0.5rem;
-  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0rem;
+  border-top-left-radius: 0rem;
 }
 
 .progress[value]::-webkit-progress-value {
   background-color: #0074d9;
-  border-bottom-left-radius: 0.5rem;
-  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0rem;
+  border-top-left-radius: 0rem;
 }
 
 .progress[value="100"]::-moz-progress-bar {
-  border-bottom-right-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0rem;
+  border-top-right-radius: 0rem;
 }
 
 .progress[value="100"]::-webkit-progress-value {
-  border-bottom-right-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0rem;
+  border-top-right-radius: 0rem;
 }
 
 .progress[value]::-webkit-progress-bar {
   background-color: #eee;
-  border-radius: 0.5rem;
+  border-radius: 0rem;
 }
 
 base::-moz-progress-bar,
 .progress[value] {
   background-color: #eee;
-  border-radius: 0.5rem;
+  border-radius: 0rem;
 }
 
 @media screen and (min-width: 0\0) {
   .progress {
     background-color: #eee;
-    border-radius: 0.5rem;
+    border-radius: 0rem;
   }
   .progress-bar {
     display: inline-block;
     height: 1rem;
     text-indent: -999rem;
     background-color: #0074d9;
-    border-bottom-left-radius: 0.5rem;
-    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0rem;
+    border-top-left-radius: 0rem;
   }
   .progress[width="100%"] {
-    border-bottom-right-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0rem;
+    border-top-right-radius: 0rem;
   }
 }
 
@@ -5291,14 +5291,14 @@ base::-moz-progress-bar,
 }
 
 .list-group-item:first-child {
-  border-top-right-radius: 0.5rem;
-  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0rem;
+  border-top-left-radius: 0rem;
 }
 
 .list-group-item:last-child {
   margin-bottom: 0;
-  border-bottom-right-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0rem;
+  border-bottom-left-radius: 0rem;
 }
 
 .list-group-item.disabled, .list-group-item.disabled:focus, .list-group-item.disabled:hover {
@@ -5780,7 +5780,7 @@ button.close {
   color: #fff;
   text-align: center;
   background-color: #000;
-  border-radius: 0.5rem;
+  border-radius: 0rem;
 }
 
 .tooltip-inner::before {
@@ -6264,27 +6264,27 @@ a.bg-inverse:focus, a.bg-inverse:hover {
 }
 
 .rounded {
-  border-radius: 0.5rem;
+  border-radius: 0rem;
 }
 
 .rounded-top {
-  border-top-right-radius: 0.5rem;
-  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0rem;
+  border-top-left-radius: 0rem;
 }
 
 .rounded-right {
-  border-bottom-right-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0rem;
+  border-top-right-radius: 0rem;
 }
 
 .rounded-bottom {
-  border-bottom-right-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0rem;
+  border-bottom-left-radius: 0rem;
 }
 
 .rounded-left {
-  border-bottom-left-radius: 0.5rem;
-  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0rem;
+  border-top-left-radius: 0rem;
 }
 
 .rounded-circle {
