@@ -1,6 +1,13 @@
 var ula = {
     slides: ['introduction', 'competence', 'contact-form'],
     index: 0,
+    isOnScreen: function(elm)
+    {
+        var elm = elm[0];
+        var rect = elm.getBoundingClientRect();
+        var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+        return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+    },
     changeSlide: function (dir) {
         this.index = this.index + dir;
         if (this.slides.length <= this.index)
@@ -14,13 +21,26 @@ var ula = {
         $.post('/form.php', data, function(){
 
         });
-    }
+    },
+    scrollSpy: function(){
+        $('body').scrollspy({target: '#card-links', offset: 56});
+	}
 };
 
 
-$(document).ready(function () {
-    $('body').scrollspy({target: '#navbar'});
 
+$(document).ready(function () {
+	
+	$( window ).resize(function() {
+		ula.scrollSpy();
+	});
+    $( window).scroll(function () {
+       if (!ula.isOnScreen($('#card-links-pointer')))
+           $('#card-links').addClass('links-top');
+       else
+           $('#card-links').removeClass('links-top');
+    });
+    ula.scrollSpy();
     $('body').keydown(function (e) {
         if (e.keyCode == 40) {
             e.preventDefault();
@@ -32,7 +52,7 @@ $(document).ready(function () {
         }
     });
 
-    $('#navbar ul li a').bind('click', function (e) {
+    $('#card-links ul li a').bind('click', function (e) {
         // prevent default anchor click behavior
         e.preventDefault();
 
@@ -44,7 +64,7 @@ $(document).ready(function () {
 
         // animate
         $('html, body').animate({
-            scrollTop: $(hash).offset().top
+            scrollTop: $(hash).offset().top - 50
         }, 300, function () {
 
             // when done, add hash to url

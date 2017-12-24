@@ -1,9 +1,93 @@
 @import "../../bower_components/bootstrap/scss/variables"
 
-$sidebar-background: #FFEB3B
-$sidebar-color: rgb(20,20,20)
+$sidebar-background: #8fbbe4
+$sidebar-color: rgb(120, 120, 120)
 $body-background: whitesmoke
-$body-color: rgb(20,20,20)
+$body-color: rgb(90, 90, 90)
+$card-width: 530px
+
+#left-side
+  color: whitesmoke
+  background-color: $body-color
+  padding: 2rem 1rem
+
+#right-side
+  padding: 2rem 1rem
+
+#card-logo
+  font-size: 4rem
+
+.links-top
+  position: fixed
+  top: 0px
+  z-index: 10000
+  background-color: white
+  box-shadow: rgba(0, 0, 0, 0.2) -2px 3px 15px
+
+#card-links
+  width: 100%
+  padding: 1rem 0
+  #links-container
+    margin: 0 auto
+    width: $card-width
+    text-align: center
+    display: table-row
+    padding-left: 0
+    li
+      list-style: none
+      a
+        margin: 0 auto
+        text-decoration: none
+        cursor: pointer
+        letter-spacing: 2px
+      a.active
+        text-decoration: underline
+#card
+  width: $card-width
+  height: 290px
+  margin: 0 auto
+  box-shadow: rgba(0, 0, 0, 0.2) -2px 3px 15px
+  #card-decoration
+    padding: 0.3rem 0
+    background-color: white
+    height: 100%
+    background-image: url('../images/card.png')
+    background-repeat: repeat
+    background-size: cover
+    #card-inner
+      background-color: white
+      height: 100%
+      text-align: center
+      padding: 1rem
+      h2
+        margin-bottom: 1rem
+      .sub-title
+        font-style: italic
+      #card-brand
+        padding-top: 23px
+        background-color: $sidebar-background
+        background-image: url('../images/card.png')
+        background-repeat: repeat
+        background-size: cover
+        font-size: 2rem
+        color: white
+        display: inline-block
+        width: 80px
+        height: 80px
+        -moz-border-radius: 40px
+        -webkit-border-radius: 40px
+        border-radius: 40px
+      #card-title
+        margin-top: 1rem
+        font-weight: bold
+      #card-info
+        width: 80%
+        tr
+          border-top: 1px solid $body-color
+        margin: 0 auto
+        i
+          margin-right: 0.5rem
+
 
 body
   position: relative
@@ -12,12 +96,48 @@ body
   //font-family: 'Raleway', sans-serif
   font-family: 'Open Sans', sans-serif
 
-.topbar
-  background-color: $sidebar-background
-  color: $sidebar-color
-  a
-    color: $sidebar-color
+.navbar-brand
+  text-align: center
+  background: $sidebar-background
+  padding: 1rem
+  box-shadow: 0 1px 25px 5px rgba(0, 0, 0, .15)
+  color: $body-color
 
+#topbar
+  #top-info
+    width: 300px
+    display: inline-block
+    text-align: left
+    float: left
+    td
+      font-size: 0.7rem
+      span:after
+        content: " "
+        color: $sidebar-background
+        margin-left: 0
+        width: 100%
+        height: 2px
+        background-color: $sidebar-background
+        display: block
+        margin-top: -4px
+        margin-left: 0px
+        opacity: 0.4
+  ul
+    width: 75%
+
+  background-color: inherit
+  color: $sidebar-color
+  ul
+    li
+      float: right
+    a
+      color: $sidebar-color
+      border-radius: 10px
+      margin-right: 1rem
+      color: $body-color
+    .nav-link.active
+      background-color: inherit
+      border-bottom: 2px solid $sidebar-background
 
 .sidebar
   padding: 0
@@ -27,11 +147,11 @@ body
   justify-content: center
   position: fixed
   background-color: $sidebar-background
-  box-shadow: 0 2px 8px rgba(0,0,0,.05)
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .05)
   ul
     li
       text-align: left
-      padding-top: 1.5rem
+      padding: 1.5rem
       padding-bottom: 0rem
       letter-spacing: 1px
       a
@@ -45,11 +165,13 @@ body
         height: 1px
         background-color: black
         display: block
-        margin-top: -6px
+        margin-top: -8px
         margin-left: 0px
         opacity: 0.4
       a.active
         border-radius: .0rem
+        font-size: 1.25rem
+        font-weight: 600
 
 .sidebar a
   color: $sidebar-color
@@ -63,7 +185,6 @@ body
   left: -20px
   top: 10px
 
-
 section
   min-height: 100vh
   display: flex
@@ -71,7 +192,6 @@ section
   justify-content: center
   text-align: justify
   line-height: 30px
-
 
 .promo
   background-color: $sidebar-background
@@ -91,25 +211,33 @@ section
 h2
   margin-bottom: 2rem
 
-h2:after
-  content: "_"
-  color: $sidebar-background
-  font-size: 1.3em
-  margin-left: 5px
-  font-weight: bold
+
+div.title-decoration
+  display: inline-flex
+  //h2:after
+  //  content: ""
+  //  border-bottom: 2px solid $sidebar-background
+  //  display: block
+  //  width: 50%
+  //  margin: 0 auto
+  //  margin-top: 5px
 
 .page-container
   button
-    color: $body-color
+    color: $sidebar-background
     border: 3px solid $sidebar-background
-    background-color: $sidebar-background
-    border: none
-    border-bottom: 2px solid darken($sidebar-background, 30%)
+    background-color: inherit
+    font-weight: bold
+    letter-spacing: 2px
   button:hover
     background-color: $sidebar-background
-    color: $body-color
-    border: none
-    border-bottom: 2px solid darken($sidebar-background, 30%)
+    color: whitesmoke
 
+#contact-form form
+  input[type="checkbox"]
+    transform: scale(2, 2)
 
-
+@media (max-width: 768px)
+  section
+    min-height: calc(100vh - 0px)
+    margin-top: 56px

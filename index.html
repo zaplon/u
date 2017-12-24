@@ -31,25 +31,34 @@
 </head>
 
 <body>
-
-<nav class="navbar navbar-inverse navbar-fixed-top hidden-md-up topbar">
-    <a class="navbar-brand" href="#">Wyceny</a>
-    <ul class="nav nav-pills">
-        <li class="nav-item">
-            <a href="#introduction" class="nav-link active">O mnie</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#competence">Oferta</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#contact-form">Kontakt</a>
-        </li>
-    </ul>
-</nav>
+<!--<nav class="navbar navbar-inverse navbar-fixed-top" id='topbar' style="display: none">-->
+    <!--<a class="navbar-brand" href="#">UM</a>-->
+    <!--<table id="top-info" class="hidden-sm-down">-->
+        <!--<tr>-->
+            <!--<td>email</td>-->
+            <!--<td class="pl-2"><span>urszula.martin@gmail.com</span></td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+            <!--<td>telefon</td>-->
+            <!--<td class="pl-2"><span>502-513-530</span></td>-->
+        <!--</tr>-->
+    <!--</table>-->
+    <!--<ul class="nav nav-pills">-->
+        <!--<li class="nav-item">-->
+            <!--<a class="nav-link" href="#contact-form">Kontakt</a>-->
+        <!--</li>-->
+        <!--<li class="nav-item">-->
+            <!--<a class="nav-link" href="#competence">Oferta</a>-->
+        <!--</li>-->
+        <!--<li class="nav-item">-->
+            <!--<a href="#introduction" class="nav-link active">O mnie</a>-->
+        <!--</li>-->
+    <!--</ul>-->
+<!--</nav>-->
 
 <div class="container-fluid page-container">
     <div class="row">
-        <div class="col-md-3 col-lg-2 hidden-sm-down bg-faded sidebar">
+        <div style='display: none' class="col-md-3 col-lg-2 hidden-sm-down bg-faded sidebar">
             <div class="promo  p-2">
                 <h1>Urszula Martin</h1>
 
@@ -59,7 +68,7 @@
                     <a href="mailto:urszula.martin@gmail.com">urszula.martin@gmail.com</a></span></div>
                 </p>
             </div>
-            <div id="navbar" class="p-2">
+            <div id="navbar">
                 <ul class="nav">
                     <li class="nav-item">
                         <a href="#introduction" class="nav-link active">O mnie</a>
@@ -73,49 +82,91 @@
                 </ul>
             </div>
         </div>
-        <div class="col-md-9 col-lg-10 offset-md-3 offset-lg-2 p-3">
-            <section id="introduction">
-                <h2>O mnie</h2>
+        <section id="introduction">
+            <div id="card">
+                <div id="card-decoration">
+                    <div id="card-inner">
+                        <div id="card-brand">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                        </div>
+                        <h2 id="card-title">Urszula Martin</h2>
 
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla, elit non auctor dapibus,
-                    lectus sapien aliquam enim, eget accumsan turpis erat vel felis. Praesent commodo vitae urna at
-                    dictum. Pellentesque faucibus vehicula porta. Ut facilisis porta dui id semper. Vestibulum rhoncus
-                    lorem vel volutpat condimentum. Morbi vehicula viverra ante, faucibus suscipit justo suscipit id.
-                    Vivamus tincidunt ante erat, ac efficitur diam varius quis. Nam posuere lorem nisi, ut convallis
-                    nisi fermentum eget. Nam ligula ex, tincidunt vel sollicitudin non, dapibus at diam.
-                </p>
-            </section>
+                        <p class="sub-title">Rzeczoznawca majątkowy</p>
+                        <table id="card-info">
+                            <tr>
+                                <td class="text-md-left"><i class="fa fa-mobile" aria-hidden="true"></i><span>502 513 530</span>
+                                </td>
+                                <td class="text-md-right"><i class="fa fa-envelope" aria-hidden="true"></i><span>urszula.martin@com</span>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="card-links-pointer" class="pt-2"></div>
+            <div id="card-links">
+                <nav id="links-container" class="navbar">
+                    <ul>
+                        <li class="col-md-4 col-sm-4 col-xs-4">
+                            <a href="#introduction">O mnie</a>
+                        </li>
+                        <li class="col-md-4 col-sm-4 col-xs-4">
+                            <a href="#competence">Oferta</a>
+                        </li>
+                        <li class="col-md-4 col-sm-4 col-xs-4">
+                            <a href="#contact-form">Kontakt</a>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </nav>
+            </div>
+        </section>
+        <div class="col-md-8 col-lg-8 offset-md-3 offset-lg-3 p-3">
             <section id="competence">
-                <h2>Oferta</h2>
+                <div class="title-decoration"><h2>Oferta</h2></div>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis felis vulputate, malesuada mauris
+                    sed, efficitur mauris. Nam imperdiet diam in finibus vulputate. Pellentesque ultricies, arcu sit
+                    amet varius fringilla, purus diam varius tortor, a lacinia ante nisl ullamcorper nunc. Curabitur nec
+                    mi aliquam, tempor diam nec, elementum mi. Aenean pharetra, diam sit amet aliquet interdum, sem
+                    ipsum ornare nisl, at sodales augue nulla sit amet tellus. Pellentesque consectetur fringilla
+                    mauris, vitae facilisis magna posuere a. Aenean non dolor ut lacus condimentum bibendum at nec
+                    eros.</p>
             </section>
             <section id="contact-form">
-                <h2>Kontakt</h2>
+                <div class="title-decoration"><h2>Kontakt</h2></div>
+
                 <form>
                     <div class="form-group row">
-                        <label for="inputName" class="col-sm-2 col-form-label">Imię*</label>
-                        <div class="col-sm-10">
+                        <label for="inputName" class="col-sm-3 col-form-label">Imię*</label>
+
+                        <div class="col-sm-9">
                             <input type="email" class="form-control" id="inputName" placeholder="Imię">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="inputEmail" class="col-sm-2 col-form-label">Email*</label>
+                        <label for="inputEmail" class="col-sm-3 col-form-label">Email*</label>
 
-                        <div class="col-sm-10">
-                            <input type="email" required class="form-control" required id="inputEmail" placeholder="Email">
+                        <div class="col-sm-9">
+                            <input type="email" required class="form-control" required id="inputEmail"
+                                   placeholder="Email">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="inputMessage" required class="col-sm-2 col-form-label">Wiadomość*</label>
+                        <label for="inputMessage" required
+                               class="col-sm-3 col-form-label"
+                               title='Co ma być przedmiotem wyceny? Do jakiego celu potrzebują Państwo operatu szacunkowego?'>Wiadomość*</label>
 
-                        <div class="col-sm-10">
-                            <textarea rows="10" required class="form-control" id="inputMessage" placeholder="Wiadomość"></textarea>
+                        <div class="col-sm-9">
+                            <textarea rows="10" required class="form-control" id="inputMessage"
+                                      placeholder="Wiadomość"></textarea>
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <label class="col-sm-2">Wyślij mi kopię</label>
+                    <div class="form-group row" style="display: none;">
+                        <label class="col-sm-3">Wyślij mi kopię</label>
 
-                        <div class="col-sm-10">
+                        <div class="col-sm-9">
                             <div class="form-check">
                                 <label class="form-check-label">
                                     <input class="form-check-input" type="checkbox">
@@ -124,7 +175,7 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <div class="offset-sm-2 col-sm-10">
+                        <div class="offset-sm-3 col-sm-9">
                             <button type="submit" class="btn btn-primary btn-lg">Prześlij</button>
                         </div>
                     </div>
