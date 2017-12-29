@@ -54,9 +54,24 @@ body {
   height: 100%;
   background-color: #464a4c; }
 
+#message-box {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: none;
+  z-index: 100; }
+  #message-box .message {
+    text-align: center;
+    padding: 1rem;
+    color: #fff; }
+  #message-box .message-error {
+    background-color: #d9534f; }
+  #message-box .message-success {
+    background-color: #5cb85c; }
+
 #page-content {
   float: right;
-  margin-top: 3rem;
+  margin: 3rem 0;
   width: calc(100% - 305px); }
   #page-content .card {
     margin-bottom: 1.5rem; }
@@ -131,7 +146,8 @@ h4 {
   #page-content {
     width: 100% !important;
     float: none;
-    margin-top: 0 !important; }
+    margin-top: 0 !important;
+    margin-bottom: 0 !important; }
 
   .navbar li {
     width: 25%;

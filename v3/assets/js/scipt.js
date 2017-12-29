@@ -8,8 +8,22 @@ function isInView(elem) {
     return (elemTop <= docViewTop);
 };
 var u = {
-    slides: ['about', 'education', 'prices', 'contact'].reverse()
-}
+    slides: ['about', 'education', 'prices', 'contact'].reverse(),
+    showMessage: function(type, msg){
+        $('#message-box').css('display', 'block');
+        var slot = $('#message-box .message');
+        if (type)
+            slot.addClass('message-success');
+        else
+            slot.addClass('message-error');
+        slot.html(msg);
+        window.setTimeout(function(){
+            $('#message-box').css('display', 'none');
+            slot.removeClass('message-success');
+            slot.removeClass('message-error');
+        }, 2000);
+    }
+};
 $(document).ready(function () {
 
     sendForm = function(){
@@ -25,9 +39,9 @@ $(document).ready(function () {
             contentType: 'application/json',
             data: JSON.stringify(data)
         }).done(function(){
-            alert('Wiadomość została przesłana');
+            u.showMessage(1, 'Wiadomość została przesłana');
         }).fail(function(){
-            alert('Wystąpił błąd');
+            u.showMessage(0, 'Wystąpił błąd');
         });
     };
 
