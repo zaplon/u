@@ -101,6 +101,12 @@ body {
 h4 {
   font-size: 1rem; }
 
+#mobile-contact {
+  padding-left: 0;
+  margin-left: 0; }
+  #mobile-contact i {
+    margin-right: 1rem; }
+
 @media only screen and (max-width: 500px) {
   .timeline > li > .timeline-badge {
     width: 25px !important;

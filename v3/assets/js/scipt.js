@@ -12,7 +12,7 @@ var u = {
 }
 $(document).ready(function () {
 
-    $('#send-form').click(function () {
+    sendForm = function(){
         var form = $('#contact-form');
         var data = {
             name: form.find('input[name="name"]').val(),
@@ -29,7 +29,7 @@ $(document).ready(function () {
         }).fail(function(){
             alert('Wystąpił błąd');
         });
-    });
+    };
 
     $('.navbar li').click(function () {
         $('.navbar li').removeClass('active');
