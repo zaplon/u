@@ -9,22 +9,36 @@ function isInView(elem) {
 };
 var u = {
     slides: ['about', 'education', 'prices', 'contact'].reverse(),
+    adjustPersonalInfo: function(){
+        var pos = $(window).scrollTop();
+        if (pos > u.personalInfoTop)
+            u.personalInfo.addClass('sticky');
+        else
+            u.personalInfo.removeClass('sticky');
+    },
     showMessage: function(type, msg){
-        $('#message-box').css('display', 'block');
         var slot = $('#message-box .message');
         if (type)
             slot.addClass('message-success');
         else
             slot.addClass('message-error');
         slot.html(msg);
-        window.setTimeout(function(){
-            $('#message-box').css('display', 'none');
-            slot.removeClass('message-success');
-            slot.removeClass('message-error');
-        }, 2000);
+        $('#message-box').fadeIn(500, function(){
+            window.setTimeout(function(){
+                $('#message-box').fadeOut(500, function(){
+                    slot.removeClass('message-success');
+                    slot.removeClass('message-error');
+                });
+            }, 2000);
+        })
+        $('#message-box').css('display', 'block');
     }
 };
 $(document).ready(function () {
+
+    u.personalInfo = $('#personal-info');
+    u.personalInfoTop = u.personalInfo.position().top;
+    u.adjustPersonalInfo();
 
     sendForm = function(){
         var form = $('#contact-form');
@@ -49,8 +63,7 @@ $(document).ready(function () {
         $('.navbar li').removeClass('active');
         $(this).addClass('active');
     });
-    var personalInfo = $('#personal-info');
-    var personalInfoTop = personalInfo.position().top;
+
     $(window).scroll(function () {
         for (var s in u.slides) {
             if (isInView('#' + u.slides[s])) {
@@ -60,10 +73,6 @@ $(document).ready(function () {
             }
         }
         ;
-        var pos = $(window).scrollTop();
-        if (pos > personalInfoTop)
-            personalInfo.addClass('sticky');
-        else
-            personalInfo.removeClass('sticky');
+        u.adjustPersonalInfo();
     });
 });
