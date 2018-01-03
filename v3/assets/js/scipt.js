@@ -8,7 +8,7 @@ function isInView(elem) {
     return (elemTop <= docViewTop);
 };
 var u = {
-    slides: ['about', 'education', 'prices', 'contact'].reverse(),
+    slides: ['prices', 'about', 'education', 'contact'].reverse(),
     adjustPersonalInfo: function(){
         var pos = $(window).scrollTop();
         if (pos > u.personalInfoTop)
