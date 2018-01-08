@@ -10,6 +10,9 @@ function isInView(elem) {
 var u = {
     slides: ['prices', 'about', 'education', 'contact'].reverse(),
     adjustPersonalInfo: function(){
+        var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        if (w < 767)
+            return;
         var pos = $(window).scrollTop();
         if (pos > u.personalInfoTop)
             u.personalInfo.addClass('sticky');
